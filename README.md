@@ -1,2 +1,3 @@
 # -
 ааа
+print('hello')
