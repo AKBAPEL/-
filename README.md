@@ -1,3 +1,3 @@
 # -
 ааа
-print('hello')
+print('hello friend')
