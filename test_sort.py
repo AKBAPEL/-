@@ -51,7 +51,8 @@ def test_insert_empty():
 def test_insert_negative():
     test_list = NEGATIVE_LIST
     result = sorting.insert_sort(test_list)
-    assert result == [-9, -1, 6, 8, 22]
+    test_list.sort()
+    assert result == test_list
 
 
 def test_insert_not_integer():

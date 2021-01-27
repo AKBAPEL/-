@@ -26,6 +26,19 @@ def insert_sort(unsortred_data: list) -> list:
     :param unsortred_data Несортированные данные
 
     """
+    _validate(unsortred_data)
+    data = unsortred_data[:]
+    for i in range(1, len(data)):
+        current = data[i]
+        j = i - 1
+        while data[i] < data[j]  and j>= 0:
+            data[i], data[j] = data[j], data[i]
+            j = j - 1
+        j = j + 1
+        data[j] = current
+
+    return data
+
 
 def selection_sort(unsortred_data: list) -> list:
      """Сортировка методом выбора
