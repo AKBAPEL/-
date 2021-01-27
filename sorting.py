@@ -13,12 +13,13 @@ def bubble_sort(unsortred_data: list) -> list:
     """
     _validate(unsortred_data)
     data = unsortred_data [:]
-    for element in range(len(unsortred_data) - 1, 0 , -1):
+    for element in range(len(data) - 1, 0 , -1):
         for current in range(0, element):
             if data[current] > data[current + 1]:
                 data[current], data[current + 1] = (
                         data[current + 1],  data[current])
     return data
+
 
 def insert_sort(unsortred_data: list) -> list:
     """Сортировка методом вставки
@@ -31,3 +32,10 @@ def selection_sort(unsortred_data: list) -> list:
      :param unsortred_data Несортированные данные
 
      """
+     _validate(unsortred_data)
+     data = unsortred_data[:]
+     for i in range(len(data)-1):
+         for j in range(i + 1, len(data)):
+             if data[i] > data[j]:
+                 data[i], data[j] = data[j], data[i]
+     return data
