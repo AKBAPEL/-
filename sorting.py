@@ -34,7 +34,7 @@ def insert_sort(unsortred_data: list) -> list:
         while data[i] < data[j]  and j>= 0:
             data[i], data[j] = data[j], data[i]
             j = j - 1
-        j = j + 1
+        
         data[j] = current
 
     return data
