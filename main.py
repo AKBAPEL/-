@@ -25,6 +25,8 @@ def sorter(filename, algorithm):
     allowed_algorithms = [BUBBLE, INSERT, SELECTION]
     if algorithm not in allowed_algorithms:
         print('Неправильно введено имя алгоритма', allowed_algorithms)
+        print("Возможные варивнты", allowed_algorithms)
+    print(unsorted_data)
 
 
 if __name__ == '__main__':
