@@ -24,4 +24,11 @@ def test_all(test_list,test_func):
     assert result == sorted(test_list)
 
 
+@pytest.mark.parametrize("test_func", [sorting.bubble_sort, sorting.selection_sort, sorting.insert_sort])
+def test_selection_not_integer(test_func):
+    test_list = NONVALID_LIST
+    with  pytest.raises(RuntimeError):
+        test_func(test_list)
+
+
 
