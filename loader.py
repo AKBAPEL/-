@@ -1,6 +1,10 @@
 """
-Загрузка данных
+Загруз
+
+ка данных
 """
+
+
 def load_from_input():
     """Получение данных через inpuе
     :return: писок несортированных данных
@@ -9,7 +13,7 @@ def load_from_input():
     while True:
         try:
             raw_list = input('Введите числа разделенные пробелом:')
-            result = [int (i) for i in raw_list.split()]
+            result = [int(i) for i in raw_list.split()]
         except ValueError:
             print("Вы ввели не праильное число")
         else:
