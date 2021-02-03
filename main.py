@@ -13,8 +13,9 @@ SELECTION = 'SELECTION'
 
 @click.command()
 @click.option("--filename", default=None, help="Имя файла с несортированными данными")
-@click.option("--algorithm", default=BUBBLE, help="Алгоритм сортировки")
+@click.option("--algorithm", default=SELECTION, help="Алгоритм сортировки")
 def sorter(filename, algorithm):
+    global Sorted_data
     allowed_algorithms = [BUBBLE, INSERT, SELECTION]
     if algorithm not in allowed_algorithms:
         print('Неправильно введено имя алгоритма', allowed_algorithms)

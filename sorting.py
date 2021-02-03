@@ -2,6 +2,8 @@
 Функции сортировки
 """
 def _validate(input_lst):
+    if not input_lst:
+        raise RuntimeError('Список элементов пуст')
     for e in input_lst:
         if not isinstance(e, int):
             raise RuntimeError(f"Элемент '{e}' не являяется числом")
