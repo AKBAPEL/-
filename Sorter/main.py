@@ -2,9 +2,8 @@
 Главный модуль программы
 Точка старта
 """
-import loader
+from Sorter import loader, sorting
 import click
-import sorting
 
 BUBBLE = 'BUBBLE'
 INSERT = 'INSERT'

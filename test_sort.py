@@ -1,7 +1,7 @@
 """
 Тесты
 """
-import sorting
+from Sorter import sorting
 import pytest
 from random import randint
 
@@ -32,5 +32,3 @@ def test_selection_not_integer(test_list, test_func):
     test_list = NONVALID_LIST
     with pytest.raises(RuntimeError):
         test_func(test_list)
-
-
