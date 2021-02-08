@@ -1,7 +1,7 @@
 """
 Тесты
 """
-from Sorter import sorting
+from sorter import sorting
 import pytest
 from random import randint
 

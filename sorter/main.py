@@ -2,7 +2,7 @@
 Главный модуль программы
 Точка старта
 """
-from Sorter import loader, sorting
+from sorter import loader, sorting
 import click
 
 BUBBLE = 'BUBBLE'
